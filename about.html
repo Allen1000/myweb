@@ -19,8 +19,8 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li ><a href="support.html">Deep Learning</a></li>
-          <li><a href="about.html">Reinforcement learning</a></li>
-          <li class="active"><a href="blog.html">Finance</a></li>
+          <li class="active"><a href="about.html">Reinforcement learning</a></li>
+          <li ><a href="blog.html">Finance</a></li>
           <li ><a href="contact.html">Contacts</a></li>
         </ul>
       </div>
@@ -34,14 +34,16 @@
     <div class="content_resize">
       <div class="mainbar">
         <div class="article">
-          <h2><span>About</span> About Quantopian</h2><div class="clr"></div>
-          <p>Quantopian is a crowd-sourced quantitative investment firm. We inspire talented people from around the world to write investment algorithms. </p>
-          <p>Quantopian provides capital, education, data, a research environment, and a development platform to algorithm authors (quants). We offer license agreements for algorithms that fit our investment strategy, and the licensing authors are paid based on their strategy's individual performance. We provide everything a quant needs to create a strategy and profit from it. </p>
-          <p><strong>Quantopian websites</strong></p>
-          <p>Some useful websites</p>
+          <h2><span>About</span>  Reinforcement learning</h2><div class="clr"></div>
+          <p>Reinforcement learning requires clever exploration mechanisms. Randomly selecting actions, without reference to an estimated probability distribution, shows poor performance. The case of (small) finite Markov decision processes is relatively well understood. However, due to the lack of algorithms that provably scale well with the number of states (or scale to problems with infinite state spaces), simple exploration methods are the most practical.</p>
+          <p>Even if the issue of exploration is disregarded and even if the state was observable (assumed hereafter), the problem remains to use past experience to find out which actions are good.</p>
+          <p>The algorithm must find a policy with maximum expected return. From the theory of MDPs it is known that, without loss of generality, the search can be restricted to the set of so-called stationary policies. A policy is stationary if the action-distribution returned by it depends only on the last state visited (from the observation agent's history). The search can be further restricted to deterministic stationary policies. A deterministic stationary policy deterministically selects actions based on the current state. Since any such policy can be identified with a mapping from the set of states to the set of actions, these policies can be identified with such mappings with no loss of generality.</p>
+          <p>This code demonstrates the reinforcement learning (Q-learning) algorithm using an example of a maze in which a robot has to reach its destination by moving in the left, right, up and down directions only. At each step, based on the outcome of the robot action it is taught and re-taught whether it was a good move or not eventually the whole process is repeated time and again until it reaches its destination. At this point the process will start again so that what ever has been learned can be verified and unnecessary moves made during the first pass can be forgotten and so on. It is good tutorial example for situations in which learning has to be done on the go i.e. without the use of training examples. Can be used in games to learn and improve the competitive capability of AI algorithm with that of human players and several other scenarios.
+          On small maze the convergence will be fast where as on large maze convergence can take some time. You can improve convergence speed by modifying the code to make Q-learning efficient.</p>
+          <p>Some useful websites:</p>
           <ul class="sb_menu">
-            <li><a href="https://www.quantopian.com/"><strong>Quantopian</strong></a></li>
-            <li><a href="https://www.ricequant.com/algorithms"><strong>Ricequant</strong></a></li>
+            <li><a href="https://arxiv.org/abs/1611.05763"><strong>arxiv</strong></a></li>
+            <li><a href=" https://www.mathworks.com/matlabcentral/fileexchange/63407-reinforcement-learning--q-learning-"><strong>q-learning</strong></a></li>
           </ul>
         </div>
       </div>
@@ -101,8 +103,8 @@
       <ul class="fmenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="support.html">Deep Learning</a></li>
-          <li><a href="about.html">Reinforcement learning</a></li>
-          <li class="active"><a href="blog.html">Finance</a></li>
+          <li class="active"><a href="about.html">Reinforcement learning</a></li>
+          <li ><a href="blog.html">Finance</a></li>
           <li><a href="contact.html">Contacts</a></li>
       </ul>
       <div class="clr"></div>
